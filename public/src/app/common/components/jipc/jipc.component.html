@@ -6,15 +6,17 @@
     <div class="col-6" style="text-align: center;">
       <br>
       <h1>
+        Decoded:
+        <br>
         {{this.Base64String}}
       </h1>
       <br>
-
+      <h2></h2>
       <form (submit)="apiSubmit()">
-        <textarea type="text" class="form-control" placeholder="Action" name="Base64String"
-          value="{{this.Base64String}}"></textarea>
+        <input type="hidden" class="form-control" placeholder="Action" name="Base64String"
+          value="{{this.Base64String}}">
 
-        <button class="btn btn-success" type="submit">Submit to JIPC API</button>
+        <button class="btn btn-success" type="submit">Click Here to Submit via JIPC API</button>
       </form>
     </div>
     <div class="col">
